@@ -1,6 +1,6 @@
 # WP-Pon
 
-ローカル開発用に雑にWordPressコンテナを作るツール！
+ローカル開発用に雑にWordPressコンテナを作るツール！Deno製！
 
 検証環境なんでアップロード制限とかめっちゃ緩くしてある。
 
@@ -9,4 +9,10 @@
 ```bash
 deno install -gWfn wp-pon --allow-run=chmod main.ts
 wp-pon hello_world -p 8000 -v latest
+```
+
+## 雑インストール
+
+```bash
+deno install -gWfn wp-pon --allow-run=chmod https://raw.githubusercontent.com/ys319/wp-pon/refs/heads/main/main.ts
 ```
